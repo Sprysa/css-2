@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+	<head>
+  
+		<meta charset="utf-8">
+  
+		<meta name="viewport" content="width=device-width">
+  
+		<title>JS Bin</title>
+  
+		<style>
+    
+			.blue {
+       
+				color: blue; 
+    
+			}
+    
+			.orange {
+       
+				color: orange; 
+    
+			}
+    
+			.yellow {
+      
+				color: yellow;
+    
+			}
+  
+		</style>
+		
+<style id="jsbin-css">
+			
+/*
+
+//1. Виділити Львів оранжевим
+			
+//2. Виділити городок та золочів голубим кольором
+			
+//3. Підкреслити перші елементи, а останні зробити жирними
+			
+//4. Дати західним містам розмір шрифта 30 пікселів 
+
+			//5. У всіх елементів крім Дніпра, виділити першу букву жовтим кольором.
+
+*/
+			
+
+li span{
+  
+				color: orange;
+			
+}
+
+
+			li ul{
+  
+				color: blue;
+			
+}
+
+
+			li span:first-child{
+  
+				text-decoration: underline;
+			
+}
+
+
+			li:last-child{
+  
+				font-weight: bold;
+			
+}
+			
+
+li[data-location="west"]{
+  
+				font-size: 30px;
+			
+}
+			
+
+li:not([data-location="center"]):first-letter{
+  
+				color: yellow;
+
+			}
+
+		</style>
+
+	</head>
+
+	<body>
+  		<ul>
+ 		   <li data-location="west">
+ 		     <span>Львів</span>
+  		    <ul>
+  		      <li>Городок</li>
+  		      <li>Золочів</li>
+ 		     </ul>
+ 		   </li>
+ 		   <li data-location="north">Київ</li>
+  		  <li data-location="south">Одеса</li>
+ 		   <li data-location="center">Дніпро</li>
+ 		   <li data-location="west">Тернопіль</li>
+ 		   <li data-location="west">Ужгород</li>
+		  </ul>
+ 		 <table>
+ 		   <tr>
+  		    <td colspan="2">1</td>
+  		    <td colspan="5">2</td>
+   		   <td>3</td>
+   		   <td>4</td>
+   		 </tr>
+  		  <tr>
+  		    <td colspan="2">1</td>
+  		    <td rowspan="2">4</td>
+  		  </tr>
+  		  <tr>
+  		    <td>1</td>
+  		    <td>2</td>
+  		    <td>4</td>
+   		   <td>4</td>
+   		   <td>5</td>
+   		 </tr>
+ 		 </table>
+	</body>
+</html>
